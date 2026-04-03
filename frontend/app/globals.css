@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #111118;
+  --surface2: #18181f;
+  --border: #ffffff0f;
+  --accent: #7c5cfc;
+  --accent2: #c084fc;
+  --green: #4ade80;
+  --red: #f87171;
+  --yellow: #fbbf24;
+  --text: #e8e8f0;
+  --muted: #6b6b80;
+  --font-size: 15px;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: radial-gradient(circle at 20% 10%, rgba(124, 92, 252, 0.22), transparent 42%), var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-family: var(--font-syne), sans-serif;
+  font-size: var(--font-size);
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(24, 24, 31, 0.95), rgba(17, 17, 24, 0.95));
+  border: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(124, 92, 252, 0.45);
+  border-radius: 999px;
+}
